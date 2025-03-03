@@ -15,15 +15,40 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Biodata</title>  
 
-<link href="./main.d8e0d294.css" rel="stylesheet"></head>
+  <link href="./main.d8e0d294.css" rel="stylesheet">
+  <style>
+    /* Simple styles for navigation */
+    .nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px;
+    }
+    .nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .section {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
 
 <body class="">
 
 <!-- Add your content of header -->
-<div class="background-color-layer" style="background-image: url('assets/images/img-01.jpg')"
-></div>
+<div class="background-color-layer" style="background-image: url('assets/images/img-01.jpg')"></div>
 <main class="content-wrapper">
   <header class="white-text-container section-container">
     <div class="text-center">
@@ -42,181 +67,208 @@
     </div>
   </header>
 
+  <!-- Navigation Menu -->
+  <div class="nav">
+    <a href="#" onclick="showSection('about')">About Me</a>
+    <a href="#" onclick="showSection('resume')">Resume</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </div>
 
-
-<!-- Add your site or app content here -->
- 
- <div class="container">
-   <div class="row">
-     <div class="col-xs-12">
-
-        <div class="card">
-          <div class="card-block">
-            <h2>About me</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <p><img src="./assets/images/img-01.jpg" class="img-responsive" alt=""></p>
-              </div>
-              <div class="col-md-8">
-
-              <p>Saya Maya Aida, mahasiswa semester 6 Manajemen Informasi Kesehatan di Universitas Gadjah Mada. Saya memiliki minat besar di sektor kesehatan, khususnya dalam bidang reimbursement dan clinical coding.</p>
-              <p> Melalui pengalaman kerja dan organisasi membuat saya mampu menyesuaikan diri dengan lingkungan yang dinamis, dengan pemahaman dan pendekatan yang melihat big picture dari suatu masalah, dan kolaborasi dengan berbagai tim dari latar belakang berbeda.</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-block">
-            <h2>Projects</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
-                <h3 class="h5"><a href="https://www.youtube.com/watch?v=3dyfZpDHHv4" target="_blank" class="project-link">ZonaSehat App</a>
-                </h3>
-                <p>Desember 2024</p>
-              </div>
-              <div class="col-md-4">
-                <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
-                <h3 class="h5"><a href="https://www.tempo.co/sains/tim-mahasiswa-ugm-ciptakan-sandal-terapi-untuk-membantu-pemulihan-pasien-patah-tulang-5197" target="_blank" class="project-link">Prototipe Sandal Terapi Fraktur</a>
-                </h3>
-                <p>Oktober 2024</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-block">
-            <h2>Work</h2>
-            <div class="work-experience">
-              <small class="date">Januari-Februari 2025</small>
-              <h3 class="h5 date-title">RSUP Dr. Sardjito - Staf Magang Penjaminan Klaim Asuransi</h3>
-              
-
-              Melakukan penarikan data untuk pengajuan klaim dan membuat laporan analisis penyebab pending klaim.</p>
-            </div>
-
-            <div class="work-experience">
-              <small class="date">Januari-Februari 2024</small>
-              <h3 class="h5 date-title">Puskesmas Gondokusuman II - Staf Magang Rekam Medis</h3>
-              
-              <p>Memberikan layanan pendaftaran pasien rawat jalan, mengelola retensi berkas rekam medis, dan berkontribusi dalam kegiatan skrining kesehatan di sekolah.</p>
-            </div>
-
-            <div class="work-experience">
-              <small class="date">Juni-Agustus 2023</small>
-              <h3 class="h5 date-title">RSUD Merah Putih - Staf Magang Rekam Medis</h3>
-              
-              <p>Melayani proses pendaftaran pasien baik untuk rawat jalan maupun gawat darurat dan mengelola berkas rekam medis yang mencakup asembling, codig, dan filing.</p>
-            </div>
-          </div>
-        </div>
-        
-
-        <div class="card">
-          <div class="card-block">
-            <h2>Education</h2>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="education-experience">
-                  <small class="date">2022-2026 (Expected)</small>
-                  <h3 class="h5 date-title">Manajemen Informasi Kesehatan</h3>
-                  <p>Universitas Gadjah Mada</p>
+  <!-- About Me Section -->
+  <div id="about" class="section active">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card">
+            <div class="card-block">
+              <h2>About me</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <p><img src="./assets/images/img-01.jpg" class="img-responsive" alt=""></p>
+                </div>
+                <div class="col-md-8">
+                  <p>Saya Maya Aida, mahasiswa semester 6 Manajemen Informasi Kesehatan di Universitas Gadjah Mada. Saya memiliki minat besar di sektor kesehatan, khususnya dalam bidang reimbursement dan clinical coding.</p>
+                  <p>Melalui pengalaman kerja dan organisasi, saya mampu menyesuaikan diri dengan lingkungan yang dinamis, dengan pemahaman dan pendekatan yang melihat big picture dari suatu masalah, dan kolaborasi dengan berbagai tim dari latar belakang berbeda.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <div class="card">
-          <div class="card-block">
-            <h2>Organisational Experience</h2>
-            <div class="organisational-experience">
-              <small class="date">2023-2024</small>
-              <h3 class="h5 date-title">BEM KM Sekolah Vokasi UGM - Staf Kajian Strategis</h3>
-            </div>
+      </div>
+    </div>
+  </div>
 
-            <div class="organisational-experience">
-              <small class="date">2024</small>
-              <h3 class="h5 date-title">Klasvogama - Staf Acara</h3>
-            </div>
-
-            <div class="organisational-experience">
-              <small class="date">2023</small>
-              <h3 class="h5 date-title">Darah Juang Festival - Koordinator Bendahara</h3>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card-block">
-            <h2>Skills</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="skills">
-                  <h3 class="h5">Microsoft Office</h3>
+  <!-- Resume Section -->
+  <div id="resume" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card">
+            <div class="card-block">
+              <h2>Projects</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
+                  <h3 class="h5"><a href="https://www.youtube.com/watch?v=3dyfZpDHHv4" target="_blank" class="project-link">ZonaSehat App</a></h3>
+                  <p>Desember 2024</p>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="skills">
-                  <h3 class="h5">Teamwork</h3>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="skills">
-                  <h3 class="h5">Time Management</h3>
+                <div class="col-md-4">
+                  <img src="./assets/images/img-03.jpg" class="img-responsive" alt="">
+                  <h3 class="h5"><a href="https://www.tempo.co/sains/tim-mahasiswa-ugm-ciptakan-sandal-terapi-untuk-membantu-pemulihan-pasien-patah-tulang-5197" target="_blank" class="project-link">Prototipe Sandal Terapi Fraktur</a></h3>
+                  <p>Oktober 2024</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-block">
-            <h2>Social Network</h2>
-            <div class="row">
-              <div class="col-md-12">
-                <p class="social-buttons"><a href="https://instagram.com/mayaida_" title=""><span class="social-round-icon fa-icon"><i class="fa fa-instagram"></i></span>@mayaida_</a></p>
+          <div class="card">
+            <div class="card-block">
+              <h2>Work</h2>
+              <div class="work-experience">
+                <small class="date">Januari-Februari 2025</small>
+                <h3 class="h5 date-title">RSUP Dr. Sardjito - Staf Magang Penjaminan Klaim Asuransi</h3>
+                <p>Melakukan penarikan data untuk pengajuan klaim dan membuat laporan analisis penyebab pending klaim.</p>
               </div>
-              <div class="col-md-12">
-                <p class="social-buttons"><a href="https://id.linkedin.com/in/mayaaida" title=""><span class="social-round-icon fa-icon"><i class="fa fa-linkedin"></i></span>Maya Aida</a></p>
+
+              <div class="work-experience">
+                <small class="date">Januari-Februari 2024</small>
+                <h3 class="h5 date-title">Puskesmas Gondokusuman II - Staf Magang Rekam Medis</h3>
+                <p>Memberikan layanan pendaftaran pasien rawat jalan, mengelola retensi berkas rekam medis, dan berkontribusi dalam kegiatan skrining kesehatan di sekolah.</p>
               </div>
-              <div class="col-md-12">
-                <p class="social-buttons"><a href="mailto:mayaaida@mail.ugm.ac.id" title=""><span class="social-round-icon fa-icon"><i class="fa fa-envelope"></i></span>mayaaida@mail.ugm.ac.id</a></p>
+
+              <div class="work-experience">
+                <small class="date">Juni-Agustus 2023</small>
+                <h3 class="h5 date-title">RSUD Merah Putih - Staf Magang Rekam Medis</h3>
+                <p>Melayani proses pendaftaran pasien baik untuk rawat jalan maupun gawat darurat dan mengelola berkas rekam medis yang mencakup asembling, coding, dan filing.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Education</h2>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="education-experience">
+                    <small class="date">2022-2026 (Expected)</small>
+                    <h3 class="h5 date-title">Manajemen Informasi Kesehatan</h3>
+                    <p>Universitas Gadjah Mada</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Organisational Experience</h2>
+              <div class="organisational-experience">
+                <small class="date">2023-2024</small>
+                <h3 class="h5 date-title">BEM KM Sekolah Vokasi UGM - Staf Kajian Strategis</h3>
+              </div>
+
+              <div class="organisational-experience">
+                <small class="date">2024</small>
+                <h3 class="h5 date-title">Klasvogama - Staf Acara</h3>
+              </div>
+
+              <div class="organisational-experience">
+                <small class="date">2023</small>
+                <h3 class="h5 date-title">Darah Juang Festival - Koordinator Bendahara</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Skills</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="skills">
+                    <h3 class="h5">Microsoft Office</h3>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="skills">
+                    <h3 class="h5">Teamwork</h3>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="skills">
+                    <h3 class="h5">Time Management</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Social Network</h2>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="social-buttons"><a href="https://instagram.com/mayaida_" title=""><span class="social-round-icon fa-icon"><i class="fa fa-instagram"></i></span>@mayaida_</a></p>
+                </div>
+                <div class="col-md-12">
+                  <p class="social-buttons"><a href="https://id.linkedin.com/in/mayaaida" title=""><span class="social-round-icon fa-icon"><i class="fa fa-linkedin"></i></span>Maya Aida</a></p>
+                </div>
+                <div class="col-md-12">
+                  <p class="social-buttons"><a href="mailto:mayaaida@mail.ugm.ac.id" title=""><span class="social-round-icon fa-icon"><i class="fa fa-envelope"></i></span>mayaaida@mail.ugm.ac.id</a></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="card">
-          <div class="card-block">
-            <h2>Contact</h2>
-            <form action="" class="reveal-content">
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="subject" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="5" placeholder="Enter your message"></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" class=" btn btn-primary">Send message</button>
-              </div> 
-            </form>
+  <!-- Contact Section -->
+  <div id="contact" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card">
+            <div class="card-block">
+              <h2>Contact</h2>
+              <form action="" class="reveal-content">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Send message</button>
+                </div> 
+              </form>
+            </div>
           </div>
-        </div>
-       
-     </div>
-   </div>
- </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+</main>
 
 <script>
+  function showSection(section) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach((sec) => {
+      sec.classList.remove('active');
+    });
+
+    // Show the selected section
+    document.getElementById(section).classList.add('active');
+  }
+
   document.addEventListener("DOMContentLoaded", function (event) {
-     scrollRevelation('.card');
+    // Show the About Me section by default
+    showSection('about');
   });
 </script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
@@ -232,6 +284,7 @@
   ga('send', 'pageview');
 </script>
 
---><script type="text/javascript" src="./main.bc58148c.js"></script></body>
+--><script type="text/javascript" src="./main.bc58148c.js"></script>
+</body>
 
 </html>
